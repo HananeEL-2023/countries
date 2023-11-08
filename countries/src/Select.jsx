@@ -45,7 +45,12 @@ export default function App() {
             </p>
             <p>Capital: {selectCountry.capital}</p>
             <p>Population: {selectCountry.population}</p>
-            <p>Latitude and Longitude: {selectCountry.latlng}</p>
+            <p>Latitude: {selectCountry.latlng[0]}</p>
+            <p>Longitude: {selectCountry.latlng[1]}</p>
+            <p>
+              You can check the location here:{" "}
+              <a href={selectCountry.maps.googleMaps}>Click here</a>
+            </p>
           </div>
         ) : (
           <p></p>
