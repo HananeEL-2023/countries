@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   const [countries, setCountries] = useState([]);
+
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all?fields=name,flags")
       .then((response) => response.json())
